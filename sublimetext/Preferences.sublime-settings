@@ -1,0 +1,21 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Material-Theme-Darker-OceanicNext (SL).tmTheme",
+	"bold_folder_labels": true,
+	"draw_white_space": "all",
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
+	"open_files_in_new_window": false,
+	"show_full_path": true,
+	"tab_size": 4,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"vintage_ctrl_keys": true,
+	"vintage_start_in_command_mode": true,
+	"word_wrap": false,
+	"material_theme_bold_tab": true, // タブを太字にする
+	"material_theme_small_statusbar": true, // 下部ステータスバーを小さくする	
+}

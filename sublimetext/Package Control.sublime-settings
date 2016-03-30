@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
+		"ConvertToUTF8",
+		"CSS Snippets",
+		"Diffy",
+		"Dotfiles Syntax Highlighting",
+		"FileBrowser",
+		"FindKeyConflicts",
+		"GitGutter",
+		"Goto-CSS-Declaration",
+		"HTML5",
+		"IMESupport",
+		"Japanize",
+		"jQuery",
+		"JsFormat",
+		"Markdown Extended",
+		"Markmon real-time markdown preview",
+		"Material Theme",
+		"Monokai Extended",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"RuboCop",
+		"SideBarEnhancements",
+		"SqlBeautifier",
+		"Sublime Files",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-php",
+		"SublimeLinter-phplint",
+		"SyncedSideBar",
+		"Table Editor",
+		"Tag",
+		"TrailingSpaces"
+	]
+}
