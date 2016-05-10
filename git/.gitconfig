@@ -1,0 +1,46 @@
+[user]
+        name = rukurx
+        email = rukurx@users.noreply.github.com
+[core]
+	excludesfile = ~/.gitignore
+	# デフォルトのエディタをVIMにする
+	editor = vim
+        repositoryformatversion = 0
+	# ファイルのパーミッション設定をチックする
+        filemode = true
+        bare = false
+        logallrefupdates = true
+	# 大文字小文字区別
+        ignorecase = false
+	# 日本語のファイル名扱う
+        precomposeunicode = true
+[merge]
+	ff = false
+[alias]
+	br = branch
+	ba = branch -a
+	cm = commit
+	ca = commit -a
+	cancel = reset --soft HEAD^
+	co = checkout
+	com = checkout master
+	df = diff
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	pro = pull --rebase origin
+	st = status
+	unstage = reset HEAD
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
