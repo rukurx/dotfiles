@@ -1,4 +1,4 @@
 #!/bin/sh
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zpreztorc ~/.zpreztorc
+ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/zsh/.zpreztorc ~/.zpreztorc
