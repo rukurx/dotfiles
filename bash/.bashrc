@@ -9,6 +9,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 # エイリアス
+alias -- -='cd -'
 alias ..='cd ..'
 alias df='df -h' # 単位付きで表示
 alias grep='grep --color' # 検索対象文字をハイライト
