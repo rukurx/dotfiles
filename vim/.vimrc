@@ -17,4 +17,4 @@ set showmatch " 括弧のハイライト
 syntax on
 set nowrap
 set tabstop=4 " タブ幅をスペース4つ
-colorscheme darkblue
+"colorscheme darkblue
