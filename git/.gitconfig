@@ -1,25 +1,27 @@
 [user]
-        name = rukurx
-        email = rukurx@users.noreply.github.com
+	name = rukurx
+	email = rukurx@users.noreply.github.com
 [core]
 	excludesfile = ~/.gitignore
 	# デフォルトのエディタをVIMにする
 	editor = vim
-        repositoryformatversion = 0
+	repositoryformatversion = 0
 	# ファイルのパーミッション設定をチックする
-        filemode = true
-        bare = false
-        logallrefupdates = true
+	filemode = true
+	bare = false
+	logallrefupdates = true
 	# 大文字小文字区別
-        ignorecase = false
+	ignorecase = false
 	# 日本語のファイル名扱う
-        precomposeunicode = true
+	precomposeunicode = true
 [merge]
 	ff = false
 [alias]
 	br = branch
 	ba = branch -a
-	cm = commit
+	c = commit
+	cam = commit -am
+	cm = commit -m
 	ca = commit -a
 	cancel = reset --soft HEAD^
 	co = checkout
