@@ -24,6 +24,7 @@ alias rm='rm -i'
 alias ps='ps --sort=start_time' # 時系列に表示
 
 # Vagrant
-alias vu='vagrant up'
-alias vs='vagrant ssh'
-alias vd='vagrant destroy'
+alias vgu='vagrant up'
+alias vgs='vagrant ssh'
+alias vgd='vagrant destroy'
+alias vgr='vagrant reload'
