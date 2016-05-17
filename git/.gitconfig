@@ -23,14 +23,14 @@
 	cam = commit -am
 	cm = commit -m
 	ca = commit -a
-	cancel = reset --soft HEAD^
+	cancel = reset --soft HEAD^ # 直前のcommit取り消し
 	co = checkout
 	com = checkout master
 	df = diff
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
 	st = status
-	unstage = reset HEAD
+	unstage = reset HEAD # git add取り消し
 [color]
 	ui = auto
 [color "branch"]
