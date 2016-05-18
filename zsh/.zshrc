@@ -40,3 +40,25 @@ PROMPT+="\$(vcs_prompt_info)"
 PROMPT+="$ "
 
 RPROMPT=""
+
+# -------------------------------------
+# エイリアス
+# -------------------------------------
+alias -- -='cd -'
+alias ..='cd ..'
+alias sbp='source ~/.bash_profile'
+alias du='du -h'
+alias df='df -h' # 単位付きで表示
+alias grep='grep --color' # 検索対象文字をハイライト
+alias ll='ls -Glah'
+alias ls='ls -G'
+alias cp='cp -ip'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ps='ps --sort=start_time' # 時系列に表示
+
+## Vagrant
+alias vgu='vagrant up'
+alias vgs='vagrant ssh'
+alias vgd='vagrant destroy'
+alias vgr='vagrant reload'
