@@ -2,6 +2,7 @@
 	name = rukurx
 	email = rukurx@users.noreply.github.com
 [core]
+	# 除外設定ファイルパス
 	excludesfile = ~/.gitignore
 	# デフォルトのエディタをVIMにする
 	editor = vim
@@ -33,6 +34,7 @@
 	pro = pull --rebase origin
 	prom = pull --rebase origin master
 	st = status
+	sts = status -s
 	unstage = reset HEAD # git add取り消し
 [color]
 	ui = auto
