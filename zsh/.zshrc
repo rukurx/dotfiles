@@ -10,17 +10,21 @@
 ## 色を使う
 setopt prompt_subst
 
-## 強力な補完を有効にする
+## 補完設定
+# 強力な補完を有効にする
 autoload -Uz compinit
 compinit
 # タブによるファイルの順番切り替えをしない
 unsetopt auto_menu
 
-## ヒストリ設定
+## 履歴設定
+# 保存先
 HISTFILE=~/.zsh_history
+# メモリに展開する件数
 HISTSIZE=10000
+# 保存する件数
 SAVEHIST=10000
-# 直前と同じコマンドをヒストリに追加しない
+# 直前と同じコマンドを追加しない
 setopt hist_ignore_dups
 
 
