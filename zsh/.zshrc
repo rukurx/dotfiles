@@ -57,6 +57,10 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias ps='ps --sort=start_time' # 時系列に表示
 
+# zsh
+alias sz='source ~/.zshrc'
+alias vz='vim ~/.zshrc'
+
 ## Vagrant
 alias vgu='vagrant up'
 alias vgs='vagrant ssh'
