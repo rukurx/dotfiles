@@ -4,6 +4,13 @@
 #fi
 
 # -------------------------------------
+# 環境変数
+# -------------------------------------
+# SSHで接続した先で日本語が使えるようにする
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# -------------------------------------
 # zshのオプション
 # -------------------------------------
 
@@ -11,11 +18,23 @@
 setopt prompt_subst
 
 ## 補完設定
-# 強力な補完を有効にする
+# 補完の定義ファイルを有効にする
 autoload -Uz compinit
 compinit
 # タブによるファイルの順番切り替えをしない
 unsetopt auto_menu
+# 大文字小文字を区別しない（大文字を入力した場合は区別する）
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# cd -<tab>で以前移動したディレクトリを表示
+setopt auto_pushd
+# auto_pushdで重複するディレクトリは記録しない
+setopt pushd_ignore_dups
+# 補完候補がないときなどにビープ音を鳴らさない。
+setopt no_beep
+# 補完候補をキャッシュする。
+zstyle ':completion:*' use-cache yes
+# キャッシュ保存先
+zstyle ':completion:*' cache-path ~/.zsh/cache
 
 ## 履歴設定
 # 保存先
@@ -26,6 +45,12 @@ HISTSIZE=10000
 SAVEHIST=10000
 # 直前と同じコマンドを追加しない
 setopt hist_ignore_dups
+# 履歴にhistoryコマンドを記録しない
+setopt hist_no_store
+# 余分な空白を削除して履歴に記録する
+setopt hist_reduce_blanks
+# zshプロセスで履歴を共有する
+setopt share_history
 
 
 # -------------------------------------
@@ -85,5 +110,6 @@ alias vz='vim ~/.zshrc'
 ## Vagrant
 alias vgu='vagrant up'
 alias vgs='vagrant ssh'
+alias vgst='vagrant status'
 alias vgd='vagrant destroy'
 alias vgr='vagrant reload'
