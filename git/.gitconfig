@@ -14,6 +14,8 @@
 	ignorecase = false
 	# 日本語のファイル名扱う
 	precomposeunicode = true
+	# 日本語ファイル名表示(git status等でエスケープ処理しない)
+	quotepath = false
 [merge]
 	ff = false
 [alias]
@@ -29,6 +31,7 @@
 	df = diff
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
+	prom = pull --rebase origin master
 	st = status
 	unstage = reset HEAD # git add取り消し
 [color]
