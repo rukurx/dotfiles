@@ -13,6 +13,8 @@ setopt prompt_subst
 ## 強力な補完を有効にする
 autoload -Uz compinit
 compinit
+# タブによるファイルの順番切り替えをしない
+unsetopt auto_menu
 
 ## ヒストリ設定
 HISTFILE=~/.zsh_history
