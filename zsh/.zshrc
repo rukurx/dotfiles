@@ -36,6 +36,7 @@ zstyle ':completion:*' use-cache yes
 # キャッシュ保存先
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
+
 ## 履歴設定
 # 保存先
 HISTFILE=~/.zsh_history
@@ -52,6 +53,9 @@ setopt hist_reduce_blanks
 # zshプロセスで履歴を共有する
 setopt share_history
 
+
+# コマンドライン上で、#以降がコメントになる(履歴のラベルに使える)
+setopt interactive_comments
 
 # -------------------------------------
 # プロンプト
