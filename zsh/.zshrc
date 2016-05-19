@@ -98,6 +98,7 @@ alias df='df -h' # 単位付きで表示
 alias grep='grep --color' # 検索対象文字をハイライト
 alias ll='ls -Glah'
 alias ls='ls -G'
+alias mkdir='mkdir -p' # 再帰的にディレクトリを作成
 alias cp='cp -ip'
 alias mv='mv -i'
 alias rm='rm -i'
