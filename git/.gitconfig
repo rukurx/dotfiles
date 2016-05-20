@@ -20,16 +20,19 @@
 [merge]
 	ff = false
 [alias]
-	br = branch
+	au = add -u
+	b = branch
 	ba = branch -a
 	c = commit
+	ca = commit -a
 	cam = commit -am
 	cm = commit -m
-	ca = commit -a
 	cancel = reset --soft HEAD^ # 直前のcommit取り消し
 	co = checkout
+	cob = checkout -b
 	com = checkout master
 	df = diff
+	f = fetch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
 	prom = pull --rebase origin master
