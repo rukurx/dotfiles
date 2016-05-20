@@ -3,7 +3,7 @@
 	email = rukurx@users.noreply.github.com
 [core]
 	# 除外設定ファイルパス
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
 	# デフォルトのエディタをVIMにする
 	editor = vim
 	repositoryformatversion = 0
