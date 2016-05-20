@@ -147,11 +147,13 @@ alias sz='source ~/.zshrc'
 alias vz='vim ~/.zshrc'
 
 ## Vagrant
-alias vgu='vagrant up'
-alias vgs='vagrant ssh'
-alias vgst='vagrant status'
-alias vgd='vagrant destroy'
-alias vgr='vagrant reload'
+alias vgv='vagrant version' # バージョン情報
+alias vgu='vagrant up'      # 起動
+alias vgh='vagrant halt'    # シャットダウン
+alias vgs='vagrant ssh'     # 接続する
+alias vgst='vagrant status' # 状態確認
+alias vgd='vagrant destroy' # 破棄する
+alias vgr='vagrant reload'  # 再起動
 
 # -------------------------------------
 # pecoの設定
