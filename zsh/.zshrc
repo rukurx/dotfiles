@@ -66,7 +66,7 @@ setopt interactive_comments
 # キーバインド
 # -------------------------------------
 
-## コマンドラインの操作はEmacsスタイルで行う(bindkeyで一覧表示される)
+## コマンドラインの操作はEmacsモードで行う(bindkeyで一覧表示される)
 # Ctrl + a : 行頭に移動
 # Ctrl + e : 行末に移動
 # Ctrl + f : 進む
@@ -78,10 +78,6 @@ setopt interactive_comments
 # Ctrl + w : カーソル位置から行頭に向かって単語(区切り文字)単位で削除
 # Ctrl + / : 元へ戻す(undo)
 bindkey -e
-
-## 使わないキーを無効にする(誤操作防止用)
-bindkey -r '^J' # Ctrl + j : 実行
-bindkey -r '^M' # Ctrl + m : 実行
 
 
 # -------------------------------------
