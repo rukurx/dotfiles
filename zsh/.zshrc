@@ -25,8 +25,12 @@ setopt prompt_subst
 # 補完の定義ファイルを有効にする
 autoload -Uz compinit
 compinit
-# タブによるファイルの順番切り替えをしない
-unsetopt auto_menu
+# タブによるファイルの順番切り替えする
+setopt auto_menu
+# 補完候補をハイライトする
+autoload -U compinit
+compinit
+zstyle ':completion:*:default' menu select=2
 # 大文字小文字を区別しない（大文字を入力した場合は区別する）
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # cd -<tab>で以前移動したディレクトリを表示
