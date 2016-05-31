@@ -58,6 +58,13 @@ setopt hist_reduce_blanks
 setopt share_history
 
 
+# 区切り文字の指定
+autoload -Uz select-word-style
+select-word-style default 
+zstyle ':zle:*' word-chars ' /=;@:{}[]()<>,|.'
+zstyle ':zle:*' word-style unspecified
+
+
 # コマンドライン上で、「#」以降がコメントになる(履歴のラベルに使える)
 setopt interactive_comments
 
