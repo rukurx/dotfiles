@@ -30,8 +30,10 @@
 	cancel = reset --soft HEAD^ # 直前のcommit取り消し
 	co = checkout
 	cob = checkout -b
+	cof = checkout -f
 	com = checkout master
 	df = diff
+	dfrm = diff remotes/origin/master # ローカルブランチとリモートのmasterブランチの差分表示
 	f = fetch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
