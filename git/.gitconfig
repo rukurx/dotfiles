@@ -38,6 +38,7 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
 	prom = pull --rebase origin master
+	puo = push -u origin
 	st = status
 	sts = status -s
 	unstage = reset HEAD # git add取り消し
