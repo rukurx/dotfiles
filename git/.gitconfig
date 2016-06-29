@@ -28,6 +28,7 @@
 	cam = commit -am
 	cm = commit -m
 	cancel = reset --soft HEAD^ # 直前のcommit取り消し
+	cancel-merge = reset --hard HEAD # マージ作業中から、マージ前に戻す
 	cancel-push = reset --hard HEAD^ # 直前のpull取り消し
 	co = checkout
 	cob = checkout -b
