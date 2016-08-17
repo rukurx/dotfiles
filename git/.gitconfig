@@ -41,6 +41,7 @@
 	pro = pull --rebase origin
 	prom = pull --rebase origin master
 	puo = push -u origin
+	search-deleted-file = log --diff-filter=D --summary # 過去のコミット履歴で削除したファイルをVimライクに検索
 	st = status
 	sts = status -s
 	unstage = reset HEAD # git add取り消し
