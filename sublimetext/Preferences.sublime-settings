@@ -9,6 +9,7 @@
 	[
 	],
 	"open_files_in_new_window": false,
+	"preview_on_click": false,
 	"show_full_path": true,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",
