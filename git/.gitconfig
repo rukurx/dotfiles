@@ -34,6 +34,7 @@
 	cob = checkout -b
 	cof = checkout -f
 	com = checkout master
+	delete-merged-branch = branch --merged | egrep -v '\*|develop|master' | xargs -I {} git branch -d {} # ローカルのマージ済みブランチ削除
 	df = diff
 	dfrm = diff remotes/origin/master # ローカルブランチとリモートのmasterブランチの差分表示
 	f = fetch
