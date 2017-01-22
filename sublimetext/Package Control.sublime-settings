@@ -2,10 +2,13 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"IMESupport"
 	],
 	"installed_packages":
 	[
+		"Babel",
 		"BracketHighlighter",
+		"Codecs33",
 		"Color Highlighter",
 		"ColorPicker",
 		"ConvertToUTF8",
@@ -13,6 +16,7 @@
 		"Diffy",
 		"Dotfiles Syntax Highlighting",
 		"Emmet",
+		"ESLint",
 		"FileBrowser",
 		"FindKeyConflicts",
 		"Goto-CSS-Declaration",
@@ -30,6 +34,7 @@
 		"Package Control",
 		"PHP Syntax Checker",
 		"Phpcs",
+		"ReactJS",
 		"RuboCop",
 		"SCSS",
 		"SideBarEnhancements",
@@ -39,6 +44,7 @@
 		"SublimeLinter",
 		"SublimeLinter-annotations",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-eslint_d",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-php",
