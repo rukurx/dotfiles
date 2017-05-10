@@ -22,15 +22,14 @@ export LC_ALL=en_US.UTF-8
 setopt prompt_subst
 
 ## 補完設定
-# 補完の定義ファイルを有効にする
-autoload -Uz compinit
-compinit
+# 補完を有効にする
+autoload -Uz compinit && compinit
 # タブによるファイルの順番切り替えする
 setopt auto_menu
+# Shift+Tabで補完を戻る
+bindkey "^[[Z" reverse-menu-complete
 # 補完候補をハイライトする
-autoload -U compinit
-compinit
-zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*:default' menu select=1
 # 大文字小文字を区別しない（大文字を入力した場合は区別する）
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # cd -<tab>で以前移動したディレクトリを表示
@@ -175,3 +174,9 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# rbenvのパスを通す
+#export PATH="$HOME/.rbenv/shims:$PATH"
+
+# composerのパスを通す
+# PATH=$PATH:~/local/bin:~/.composer/vendor/bin
