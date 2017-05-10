@@ -1,3 +1,6 @@
+# Install apm command
+apm command is installed when Atom package is installed.
+
 # Show installed packages
 apm list -ib
 
