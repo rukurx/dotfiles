@@ -180,3 +180,4 @@ bindkey '^r' peco-select-history
 
 # composerのパスを通す
 # PATH=$PATH:~/local/bin:~/.composer/vendor/bin
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
