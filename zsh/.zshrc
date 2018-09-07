@@ -34,6 +34,10 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # cd -<tab>で以前移動したディレクトリを表示
 setopt auto_pushd
+# ../ の補完で、今いるディレクトリを表示しない
+zstyle ':completion:*' ignore-parents parent pwd ..
+# ディレクトリ名だけで cd する
+setopt auto_cd
 # auto_pushdで重複するディレクトリは記録しない
 setopt pushd_ignore_dups
 # 補完候補がないときなどにビープ音を鳴らさない。
@@ -71,6 +75,11 @@ zstyle ':zle:*' word-style unspecified
 # コマンドライン上で、「#」以降がコメントになる(履歴のラベルに使える)
 setopt interactive_comments
 
+# 日本語ファイル名を表示可能にする
+setopt print_eight_bit
+
+# Ctrl+s での画面ロックと Ctrl+q での解除を無効化する
+setopt no_flow_control
 
 # -------------------------------------
 # キーバインド
