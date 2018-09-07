@@ -154,6 +154,10 @@ alias -g G='| grep'
 alias sz='source ~/.zshrc'
 alias vz='vim ~/.zshrc'
 
+## vim
+alias v="vim"
+alias vv="vim ~/.vimrc"
+
 ## Vagrant
 alias vgv='vagrant version' # バージョン情報
 alias vgu='vagrant up'      # 起動
