@@ -146,6 +146,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias ps='ps --sort=start_time' # 時系列に表示
 alias sudo='sudo '
+alias sed='gsed' # GNU版のsed(gnu-sed)を使う
 
 ## グローバルエイリアス
 alias -g G='| grep'
