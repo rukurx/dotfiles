@@ -34,7 +34,6 @@ filetype indent on
 
 syntax on
 set nowrap " 折り返しなしで表示する
-set tabstop=2 " タブ幅をスペース4つ
 "colorscheme darkblue
 
 :retab!
