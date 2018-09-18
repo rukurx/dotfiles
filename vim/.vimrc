@@ -21,7 +21,9 @@ set showmatch " 括弧の対応関係をハイライトする
 set autoindent " 改行時に前の行のインデントを継続する
 
 set binary noeol " ファイル保存時にファイル末尾に改行を追加しない
-set paste " ペーストモードにする（ペースト時に自動でインデントされない）
+
+" pasteモードを有効にすると自動インデントが無効になるのでコメントアウトする
+"set paste " ペーストモードにする（ペースト時に自動でインデントされない）
 
 filetype indent on
 
