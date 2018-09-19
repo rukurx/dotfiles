@@ -46,6 +46,8 @@
 	st = status
 	sts = status -s
 	unstage = reset HEAD # git add取り消し
+	name = config --local user.name # ローカルのユーザ名を設定
+	email = git config --local user.email # ローカルのEmailを設定
 [color]
 	ui = auto
 [color "branch"]
