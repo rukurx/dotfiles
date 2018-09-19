@@ -159,6 +159,9 @@ alias vz='vim ~/.zshrc'
 alias v="vim"
 alias vv="vim ~/.vimrc"
 
+## gitconfig
+alias vgit="vim ~/.gitconfig"
+
 ## Vagrant
 alias vgv='vagrant version' # バージョン情報
 alias vgu='vagrant up'      # 起動
