@@ -36,6 +36,8 @@
 	com = checkout master
 	delete-merged-branch = branch --merged | egrep -v '^\\*|develop$|master$' | xargs -I {} git branch -d {} # ローカルのマージ済みブランチ削除
 	df = diff
+	dfcw = diff --color-words # 単語単位で比較する
+	dfstg = diff --staged # addした差分を確認する。"git diff --cached" と同じ
 	dfrm = diff remotes/origin/master # ローカルブランチとリモートのmasterブランチの差分表示
 	f = fetch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
