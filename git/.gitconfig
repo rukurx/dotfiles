@@ -65,3 +65,5 @@
 	added = yellow
 	changed = red
 	untracked = cyan
+[diff]
+	compactionHeuristic = true
