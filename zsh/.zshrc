@@ -122,7 +122,8 @@ function vcs_prompt_info() {
     [[ -n "$vcs_info_msg_0_" ]] && echo -n " %{$fg[red]%}$vcs_info_msg_0_%f"
 }
 
-PROMPT="%F{green}%n@%m%f:"
+#PROMPT="%F{green}%n@%m%f:"
+PROMPT="%F{green}Mac%f:"
 PROMPT+="%F{blue}%c%f"
 PROMPT+="\$(vcs_prompt_info)"
 PROMPT+="$ "
