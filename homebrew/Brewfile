@@ -43,6 +43,7 @@ cask 'the-unarchiver'
 cask 'trailer'
 #cask 'vagrant'
 #cask 'virtualbox'
+cask 'visual-studio-code'
 cask 'vivaldi'
 mas 'bear', id: 1091189122
 mas 'LINE', id: 539883307
