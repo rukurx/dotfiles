@@ -37,3 +37,9 @@ set nowrap " 折り返しなしで表示する
 "colorscheme darkblue
 
 :retab!
+
+" ノーマルモード時だけ ; と : を入れ替える(USキーボード用)
+nnoremap ; :
+nnoremap : ;
+" jjでESCする
+inoremap <silent> jj <ESC>
