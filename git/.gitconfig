@@ -1,6 +1,6 @@
 [user]
-	# name = rukurx
-	# email = rukurx@users.noreply.github.com
+	name = rukurx
+	email = rukurx@users.noreply.github.com
 [core]
 	# 除外設定ファイルパス
 	excludesfile = ~/.gitignore_global

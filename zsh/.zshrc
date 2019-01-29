@@ -203,3 +203,6 @@ bindkey '^r' peco-select-history
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Pythonの仮想環境(.venvディレクトリ)をプロジェクトルート直下に作る
+export PIPENV_VENV_IN_PROJECT=true
