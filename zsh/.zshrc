@@ -195,16 +195,31 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+# -------------------------------------
+# Rubyの設定
+# -------------------------------------
 # rbenvのパスを通す
 #export PATH="$HOME/.rbenv/shims:$PATH"
 
+# -------------------------------------
+# PHPの設定
+# -------------------------------------
 # composerのパスを通す
 # PATH=$PATH:~/local/bin:~/.composer/vendor/bin
+
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
+# -------------------------------------
+# Pythonの設定
+# -------------------------------------
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Pythonの仮想環境(.venvディレクトリ)をプロジェクトルート直下に作る
 export PIPENV_VENV_IN_PROJECT=true
+
+
+
+# 特定のディレクトリのみで有効な環境変数や設定を使う
+eval "$(direnv hook zsh)"
