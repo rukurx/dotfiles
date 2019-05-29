@@ -56,7 +56,9 @@ HISTSIZE=10000
 # 保存する件数
 SAVEHIST=10000
 # 直前と同じコマンドを追加しない
-setopt hist_ignore_dups
+# setopt hist_ignore_dups
+# 過去に同じコマンドがあれば古い履歴を削除する
+setopt hist_ignore_all_dups
 # 履歴にhistoryコマンドを記録しない
 setopt hist_no_store
 # 余分な空白を削除して履歴に記録する
