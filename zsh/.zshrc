@@ -218,7 +218,8 @@ eval "$(pyenv init -)"
 
 # Pythonの仮想環境(.venvディレクトリ)をプロジェクトルート直下に作る
 export PIPENV_VENV_IN_PROJECT=true
-
+# 環境変数を列挙した.envファイルを読込する
+export DJANGO_READ_DOT_ENV_FILE=true
 
 
 # 特定のディレクトリのみで有効な環境変数や設定を使う
