@@ -13,4 +13,33 @@ $ brew update
 $ brew bundle
 ```
 
+# Update Homebrew itself
+
+```
+$ brew update
+```
+
+# Update Installed Packages
+
+```
+$ brew upgrade
+```
+
+# Install Package
+
+```
+$ brew install vim
+```
+
+# Uninstall Package
+
+```
+$ brew uninstall vim
+```
+
+# Show Installed Packages
+
+```
+$ brew list
+```
 
