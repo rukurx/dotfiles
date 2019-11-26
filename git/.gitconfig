@@ -21,6 +21,7 @@
 	ff = false
 [alias]
 	au = add -u
+	amend = commit --amend
 	b = branch
 	ba = branch -a
 	c = commit
@@ -47,6 +48,7 @@
 	search-deleted-file = log --diff-filter=D --summary # 過去のコミット履歴で削除したファイルをVimライクに検索
 	st = status
 	sts = status -s
+	stashall = stash -u # untrackedなファイルも隠してくれる
 	unstage = reset HEAD # git add取り消し
 	name = config --local user.name # ローカルのユーザ名を設定
 	email = config --local user.email # ローカルのEmailを設定
