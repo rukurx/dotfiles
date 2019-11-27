@@ -31,6 +31,12 @@ $ brew upgrade
 $ brew install vim
 ```
 
+# Reinstall Package
+
+```
+$ brew reinstall vim
+```
+
 # Uninstall Package
 
 ```
