@@ -224,3 +224,15 @@ export DJANGO_READ_DOT_ENV_FILE=true
 
 # 特定のディレクトリのみで有効な環境変数や設定を使う
 eval "$(direnv hook zsh)"
+
+# -------------------------------------
+# Goの設定
+# -------------------------------------
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+
+# -------------------------------------
+# Nodeの設定
+# -------------------------------------
+export PATH=$PATH:./node_modules/.bin
