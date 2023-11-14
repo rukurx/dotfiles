@@ -34,16 +34,16 @@
 	co = checkout
 	cob = checkout -b
 	cof = checkout -f
-	com = checkout master
-	delete-merged-branch = !git branch --merged | egrep -v '^\\*|develop$|master$' | xargs -I % git branch -d % # ローカルのマージ済みブランチ削除
+	com = checkout main
+	delete-merged-branch = !git branch --merged | egrep -v '^\\*|develop$|main$' | xargs -I % git branch -d % # ローカルのマージ済みブランチ削除
 	df = diff
 	dfcw = diff --color-words # 単語単位で比較する
 	dfstg = diff --staged # addした差分を確認する。"git diff --cached" と同じ
-	dfrm = diff remotes/origin/master # ローカルブランチとリモートのmasterブランチの差分表示
+	dfrm = diff remotes/origin/main # ローカルブランチとリモートのmainブランチの差分表示
 	f = fetch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	pro = pull --rebase origin
-	prom = pull --rebase origin master
+	prom = pull --rebase origin main
 	puo = push -u origin
 	search-deleted-file = log --diff-filter=D --summary # 過去のコミット履歴で削除したファイルをVimライクに検索
 	st = status
