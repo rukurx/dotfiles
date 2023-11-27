@@ -165,6 +165,9 @@ alias vv="vim ~/.vimrc"
 ## gitconfig
 alias vgit="vim ~/.gitconfig"
 
+# git
+alias g="git"
+
 ## Vagrant
 alias vgv='vagrant version' # バージョン情報
 alias vgu='vagrant up'      # 起動
