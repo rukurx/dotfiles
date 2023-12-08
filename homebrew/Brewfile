@@ -1,10 +1,18 @@
 tap 'homebrew/bundle'
+tap "homebrew/services"
+tap "ngrok/ngrok"
 brew 'ansible'
+brew 'awscli'
+brew 'direnv'
 brew 'git'
 brew 'gnu-sed'
+brew "go"
 brew 'libyaml'
+brew 'jq'
+brew "mas"
 brew 'mysql'
 brew 'node'
+brew "nodebrew"
 brew 'openssl'
 brew 'peco'
 brew 'python'
@@ -27,6 +35,7 @@ cask 'cyberduck'
 cask 'docker'
 cask 'dropbox'
 cask 'evernote'
+cask "graphiql"
 cask 'google-chrome'
 cask 'google-drive-file-stream'
 cask 'google-japanese-ime'
@@ -38,6 +47,7 @@ cask 'kindle'
 cask 'mi'
 cask 'mysqlworkbench'
 cask 'sequel-pro'
+cask "ngrok"
 cask 'skitch'
 cask 'slack'
 cask 'sublime-text'
