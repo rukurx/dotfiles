@@ -52,6 +52,8 @@
 	search-deleted-file = log --diff-filter=D --summary # 過去のコミット履歴で削除したファイルをVimライクに検索
 	st = status
 	sts = status -s
+	sw = switch
+	swc = switch -c
 	stashall = stash -u # untrackedなファイルも隠してくれる
 	unstage = reset HEAD # git add取り消し
 	name = config --local user.name # ローカルのユーザ名を設定
