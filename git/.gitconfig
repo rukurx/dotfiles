@@ -36,6 +36,8 @@
 	cof = checkout -f
 	com = checkout main
 	delete-merged-branch = !git branch --merged | egrep -v '^\\*|develop$|main$' | xargs -I % git branch -d % # ローカルのマージ済みブランチ削除
+	# delete-merged-branchのショートカット
+	dmb = delete-merged-branch
 	df = diff
 	dfcw = diff --color-words # 単語単位で比較する
 	dfstg = diff --staged # addした差分を確認する。"git diff --cached" と同じ
@@ -44,9 +46,15 @@
 	f = fetch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	log1 = log --oneline
+	# 現在のリポジトリのGithubのWebページを開く
+	open = "!f() { REPO_URL=$(git config --get remote.origin.url | sed -e \"s/git@/https:\\/\\//\" -e \"s/com:/com\\//\" -e \"s/\\.git$//\"); open $REPO_URL; }; f"
+	# 現在のブランチのGitHubのWebページを開く
+	openc = "!f() { REPO_URL=$(git config --get remote.origin.url | sed -e \"s/git@/https:\\/\\//\" -e \"s/com:/com\\//\" -e \"s/\\.git$//\"); BRANCH=$(git symbolic-ref --short HEAD); open $REPO_URL/tree/$BRANCH; }; f"
 	pro = pull --rebase origin
 	prom = pull --rebase origin main
 	puo = push -u origin
+	# 現在のブランチを対象にリモートにブランチを作成する
+	puoc = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
 	rename = branch -m
 	rabort = rebase --abort
 	search-deleted-file = log --diff-filter=D --summary # 過去のコミット履歴で削除したファイルをVimライクに検索
