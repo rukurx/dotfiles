@@ -152,6 +152,8 @@ alias -g G='| grep'
 ## zsh
 alias sz='source ~/.zshrc'
 alias vz='vim ~/.zshrc'
+## 環境変数管理
+alias vze='vim ~/.zshenv'
 
 ## vim
 alias v="vim"
@@ -175,7 +177,6 @@ alias vgst='vagrant status' # 状態確認
 alias vgd='vagrant destroy' # 破棄する
 alias vgr='vagrant reload'  # 再起動
 
-alias gh="open https://github.$(git config remote.origin.url | cut -f2 -d. | tr ':' /)"
 
 # -------------------------------------
 # pecoの設定
